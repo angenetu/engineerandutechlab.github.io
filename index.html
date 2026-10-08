@@ -1,0 +1,2362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andualem Genetu | Electrical & Computer Engineer & Digital Creator</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Official portfolio of Andualem Genetu, an Ethiopian engineer specializing in IoT, automation, software development, video editing, and digital marketing.">
+    <meta name="keywords" content="Electrical Engineering, IoT, Arduino, Automation, Digital Marketing, Video Editing, Ethiopia, Portfolio, Software Developer">
+    <meta property="og:title" content="Andualem Genetu Portfolio">
+    <meta property="og:description" content="Official portfolio of Andualem Genetu, an Ethiopian engineer specializing in IoT, automation, software development, video editing, and digital marketing.">
+    <meta property="og:image" content="https://z-cdn-media.chatglm.cn/files/9cba98d4-f23c-4a6f-a975-cd32864a3f09_qqq.jpg?auth_key=1862940241-72af189116fe4e62860921c32c67378a-0-0b21df373c1bbb21d81c5737634a32b9">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Prism.js for Code Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    
+    <script>
+        // Tailwind Configuration
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#0066FF',
+                        'neon-purple': '#8B5CF6',
+                        'aqua-cyan': '#00F5D4',
+                        'electric-pink': '#FF006E',
+                        'solar-yellow': '#FFBE0B',
+                        'dark-navy': '#0A0E27',
+                        'tech-gray': '#1A1F3A',
+                        'code-bg': '#2D2D2D',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace'],
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+                        'gradient-shift': 'gradient-shift 8s ease infinite',
+                        'rotate-3d': 'rotate-3d 20s linear infinite',
+                        'wave': 'wave 3s ease-in-out infinite',
+                        'tech-pulse': 'tech-pulse 2s ease-in-out infinite',
+                        'typing': 'typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite',
+                    },
+                    keyframes: {
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-20px) rotate(2deg)' },
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': { boxShadow: '0 0 30px rgba(139, 92, 246, 0.8)' },
+                            '50%': { boxShadow: '0 0 50px rgba(139, 92, 246, 1)' },
+                        },
+                        'gradient-shift': {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                        },
+                        'rotate-3d': {
+                            '0%': { transform: 'rotateY(0deg)' },
+                            '100%': { transform: 'rotateY(360deg)' },
+                        },
+                        'wave': {
+                            '0%, 100%': { transform: 'translateX(0)' },
+                            '50%': { transform: 'translateX(10px)' },
+                        },
+                        'tech-pulse': {
+                            '0%, 100%': { 
+                                transform: 'scale(1)',
+                                filter: 'brightness(1)'
+                            },
+                            '50%': { 
+                                transform: 'scale(1.05)',
+                                filter: 'brightness(1.2)'
+                            },
+                        },
+                        'typing': {
+                            'from': { width: '0' },
+                            'to': { width: '100%' }
+                        },
+                        'blink-caret': {
+                            'from, to': { borderColor: 'transparent' },
+                            '50%': { borderColor: 'var(--electric-pink)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        :root {
+            --primary-blue: #0066FF;
+            --neon-purple: #8B5CF6;
+            --aqua-cyan: #00F5D4;
+            --electric-pink: #FF006E;
+            --solar-yellow: #FFBE0B;
+            --dark-navy: #0A0E27;
+            --tech-gray: #1A1F3A;
+            --code-bg: #2D2D2D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            background: linear-gradient(135deg, #0A0E27 0%, #1A1F3A 50%, #2D1B69 100%);
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Enhanced Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(26, 31, 58, 0.5);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, var(--primary-blue), var(--neon-purple), var(--electric-pink));
+            border-radius: 6px;
+        }
+
+        /* Custom Cursor */
+        .cursor {
+            width: 25px;
+            height: 25px;
+            border: 3px solid var(--neon-purple);
+            border-radius: 50%;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            transition: all 0.15s ease;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            backdrop-filter: blur(2px);
+        }
+
+        .cursor-grow {
+            transform: translate(-50%, -50%) scale(2);
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.3), transparent);
+            border-color: var(--electric-pink);
+        }
+
+        /* Enhanced Glassmorphism */
+        .glass {
+            background: rgba(26, 31, 58, 0.25);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 102, 255, 0.2);
+        }
+
+        .glass-hover:hover {
+            background: rgba(26, 31, 58, 0.35);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            box-shadow: 0 12px 40px rgba(139, 92, 246, 0.3);
+            transform: translateY(-5px);
+        }
+
+        /* Enhanced Gradient Backgrounds */
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-blue), var(--neon-purple), var(--electric-pink), var(--solar-yellow));
+            background-size: 400% 400%;
+            animation: gradient-shift 8s ease infinite;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary-blue), var(--neon-purple), var(--electric-pink), var(--aqua-cyan));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 300% auto;
+            animation: gradient-shift 3s ease infinite;
+        }
+
+        /* Enhanced Particle Background */
+        #particles-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Typing Animation */
+        .typing-text {
+            overflow: hidden;
+            border-right: 3px solid var(--electric-pink);
+            white-space: nowrap;
+            animation: typing;
+        }
+
+        /* Enhanced Skill Progress Bars */
+        .skill-bar {
+            height: 12px;
+            background: rgba(26, 31, 58, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-blue), var(--neon-purple), var(--electric-pink));
+            border-radius: 10px;
+            width: 0;
+            transition: width 2s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-progress::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: wave 2s linear infinite;
+        }
+
+        /* Enhanced Preloader */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--dark-navy), var(--tech-gray));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .preloader-inner {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        .preloader-circle {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-top-color: var(--electric-pink);
+            animation: spin 1s linear infinite;
+        }
+
+        .preloader-circle:nth-child(2) {
+            width: 70px;
+            height: 70px;
+            top: 15px;
+            left: 15px;
+            border-top-color: var(--neon-purple);
+            animation-delay: 0.2s;
+        }
+
+        .preloader-circle:nth-child(3) {
+            width: 40px;
+            height: 40px;
+            top: 30px;
+            left: 30px;
+            border-top-color: var(--aqua-cyan);
+            animation-delay: 0.4s;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Circuit Line Animation */
+        .circuit-line {
+            position: absolute;
+            background: linear-gradient(90deg, transparent, var(--electric-pink), var(--neon-purple), transparent);
+            height: 2px;
+            animation: circuit-flow 4s linear infinite;
+        }
+
+        @keyframes circuit-flow {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Enhanced Timeline */
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary-blue), var(--neon-purple), var(--electric-pink));
+            border-radius: 2px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 24px;
+            background: var(--electric-pink);
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 0 0 8px rgba(255, 0, 110, 0.3);
+            animation: tech-pulse 2s ease-in-out infinite;
+        }
+
+        /* Enhanced Project Cards */
+        .project-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-15px) rotateX(5deg) rotateY(5deg);
+            box-shadow: 0 25px 50px rgba(139, 92, 246, 0.4);
+        }
+
+        /* Code Snippet Styles */
+        .code-snippet {
+            background: var(--code-bg);
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+            overflow-x: auto;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        .code-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .code-language {
+            color: var(--aqua-cyan);
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .code-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .code-action-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .code-action-btn:hover {
+            background: var(--neon-purple);
+        }
+
+        /* Enhanced Filter Buttons */
+        .filter-btn {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .filter-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: linear-gradient(135deg, var(--primary-blue), var(--neon-purple));
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s ease, height 0.3s ease;
+        }
+
+        .filter-btn.active::before {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Enhanced Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-blue), var(--neon-purple), var(--electric-pink));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.3rem;
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+            animation: tech-pulse 2s ease-in-out infinite;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-8px) scale(1.1);
+            box-shadow: 0 15px 35px rgba(139, 92, 246, 0.6);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin-left: 70px;
+                margin-right: 0;
+                padding-left: 0;
+                padding-right: 0;
+                text-align: left;
+            }
+
+            .timeline-dot {
+                left: 30px;
+            }
+        }
+
+        /* Tech Grid Background */
+        .tech-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 102, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 102, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+        }
+
+        /* Glitch Effect */
+        .glitch {
+            position: relative;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 0.05em 0 0 var(--electric-pink), -0.05em -0.025em 0 var(--neon-purple);
+            animation: glitch 2s infinite;
+        }
+
+        @keyframes glitch {
+            0%, 100% {
+                text-shadow: 0.05em 0 0 var(--electric-pink), -0.05em -0.025em 0 var(--neon-purple);
+            }
+            25% {
+                text-shadow: -0.05em -0.025em 0 var(--electric-pink), 0.025em 0.025em 0 var(--neon-purple);
+            }
+            50% {
+                text-shadow: 0.025em 0.05em 0 var(--electric-pink), 0.05em 0 0 var(--neon-purple);
+            }
+            75% {
+                text-shadow: -0.025em 0 0 var(--electric-pink), -0.025em -0.025em 0 var(--neon-purple);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Tech Grid Background -->
+    <div class="tech-grid"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-circle"></div>
+            <div class="preloader-circle"></div>
+            <div class="preloader-circle"></div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 glass">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text font-poppins">Andualem Genetu</a>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="nav-link hover:text-electric-pink transition-colors">Home</a>
+                <a href="#about" class="nav-link hover:text-neon-purple transition-colors">About</a>
+                <a href="#skills" class="nav-link hover:text-aqua-cyan transition-colors">Skills</a>
+                <a href="#projects" class="nav-link hover:text-primary-blue transition-colors">Projects</a>
+                <a href="#gallery" class="nav-link hover:text-electric-pink transition-colors">Gallery</a>
+                <a href="#experience" class="nav-link hover:text-neon-purple transition-colors">Experience</a>
+                <a href="#certificates" class="nav-link hover:text-aqua-cyan transition-colors">Certificates</a>
+                <a href="#blog" class="nav-link hover:text-primary-blue transition-colors">Blog</a>
+                <a href="#contact" class="nav-link hover:text-electric-pink transition-colors">Contact</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-white hover:bg-opacity-10 transition-colors">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <button id="mobile-menu-toggle" class="md:hidden p-2">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass absolute top-full left-0 w-full">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-3">
+                <a href="#home" class="nav-link hover:text-electric-pink transition-colors">Home</a>
+                <a href="#about" class="nav-link hover:text-neon-purple transition-colors">About</a>
+                <a href="#skills" class="nav-link hover:text-aqua-cyan transition-colors">Skills</a>
+                <a href="#projects" class="nav-link hover:text-primary-blue transition-colors">Projects</a>
+                <a href="#gallery" class="nav-link hover:text-electric-pink transition-colors">Gallery</a>
+                <a href="#experience" class="nav-link hover:text-neon-purple transition-colors">Experience</a>
+                <a href="#certificates" class="nav-link hover:text-aqua-cyan transition-colors">Certificates</a>
+                <a href="#blog" class="nav-link hover:text-primary-blue transition-colors">Blog</a>
+                <a href="#contact" class="nav-link hover:text-electric-pink transition-colors">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <canvas id="particles-canvas"></canvas>
+        
+        <!-- Enhanced Circuit Lines -->
+        <div class="circuit-line" style="top: 15%; width: 90%; left: -90%;"></div>
+        <div class="circuit-line" style="top: 35%; width: 70%; left: -70%; animation-delay: 0.5s;"></div>
+        <div class="circuit-line" style="top: 55%; width: 80%; left: -80%; animation-delay: 1s;"></div>
+        <div class="circuit-line" style="top: 75%; width: 60%; left: -60%; animation-delay: 1.5s;"></div>
+        <div class="circuit-line" style="top: 90%; width: 85%; left: -85%; animation-delay: 2s;"></div>
+        
+        <div class="container mx-auto px-6 z-10">
+            <div class="text-center" data-aos="fade-up">
+                <div class="mb-8 relative inline-block">
+                    <img src="https://z-cdn-media.chatglm.cn/files/9cba98d4-f23c-4a6f-a975-cd32864a3f09_qqq.jpg?auth_key=1862940241-72af189116fe4e62860921c32c67378a-0-0b21df373c1bbb21d81c5737634a32b9" alt="Andualem Genetu" class="w-48 h-48 md:w-72 md:h-72 rounded-full border-4 border-electric-pink mx-auto shadow-2xl animate-float object-cover">
+                    <div class="absolute inset-0 rounded-full border-4 border-neon-purple opacity-50 animate-pulse-glow"></div>
+                    <div class="absolute inset-0 rounded-full border-4 border-aqua-cyan opacity-30 animate-pulse-glow" style="animation-delay: 0.5s;"></div>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 font-poppins">
+                    Hi, I'm <span class="gradient-text">Andualem Genetu</span>
+                </h1>
+                
+                <h2 class="text-2xl md:text-3xl mb-6 font-poppins">
+                    Electrical & Computer Engineer | IoT Innovator | Digital Creator
+                </h2>
+                
+                <div class="h-10 mb-6">
+                    <p id="typing-text" class="typing-text text-xl md:text-2xl"></p>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="#projects" class="px-8 py-4 bg-gradient-to-r from-primary-blue via-neon-purple to-electric-pink text-white rounded-full font-bold hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <i class="fas fa-briefcase mr-2"></i> View My Work
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-electric-pink text-electric-pink rounded-full font-bold hover:bg-electric-pink hover:text-white transition-all duration-300">
+                        <i class="fas fa-envelope mr-2"></i> Hire Me
+                    </a>
+                    <a href="MYCV.pdf" class="px-8 py-4 border-2 border-aqua-cyan text-aqua-cyan rounded-full font-bold hover:bg-aqua-cyan hover:text-white transition-all duration-300">
+                        <i class="fas fa-download mr-2"></i> Download CV AND OPEN
+                    </a>
+                    <a href="MY CERTIFICATION.jpg" class="px-8 py-4 border-2 border-aqua-cyan text-aqua-cyan rounded-full font-bold hover:bg-aqua-cyan hover:text-white transition-all duration-300">
+                        <i class="fas fa-download mr-2"></i> Download Certification AND OPEN
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 font-poppins" data-aos="fade-up">
+                <span class="gradient-text">Who I Am</span>
+            </h2>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <p class="text-xl mb-8 leading-relaxed">
+                        I'm Andualem Genetu — a motivated Electrical & Computer Engineer skilled in electronics maintenance, software development, networking, and digital innovation. I bridge engineering with creativity, designing smart systems, automating processes, and crafting engaging digital content. My vision is to use technology for community development and innovation.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <div class="glass p-6 rounded-xl glass-hover">
+                            <h3 class="font-bold mb-3 text-electric-pink text-lg">📍 Location</h3>
+                            <p class="text-lg">Addis Ababa, Ethiopia</p>
+                        </div>
+                        <div class="glass p-6 rounded-xl glass-hover">
+                            <h3 class="font-bold mb-3 text-neon-purple text-lg">📧 Email</h3>
+                            <p class="text-lg">angenetu47@gmail.com</p>
+                        </div>
+                        <div class="glass p-6 rounded-xl glass-hover">
+                            <h3 class="font-bold mb-3 text-aqua-cyan text-lg">📞 Phone</h3>
+                            <p class="text-lg">+251 922 901 083</p>
+                        </div>
+                        <div class="glass p-6 rounded-xl glass-hover">
+                            <h3 class="font-bold mb-3 text-primary-blue text-lg">🌍 Languages</h3>
+                            <p class="text-lg">Amharic, Afaan Oromo, English</p>
+                        </div>
+                    </div>
+                    
+                    <div class="glass p-6 rounded-xl glass-hover">
+                        <h3 class="font-bold mb-4 text-electric-pink text-lg">💡 Interests</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-gradient-to-r from-primary-blue to-neon-purple bg-opacity-20 text-white rounded-full font-medium">Reading</span>
+                            <span class="px-4 py-2 bg-gradient-to-r from-neon-purple to-electric-pink bg-opacity-20 text-white rounded-full font-medium">Research</span>
+                            <span class="px-4 py-2 bg-gradient-to-r from-electric-pink to-aqua-cyan bg-opacity-20 text-white rounded-full font-medium">Problem Solving</span>
+                            <span class="px-4 py-2 bg-gradient-to-r from-aqua-cyan to-primary-blue bg-opacity-20 text-white rounded-full font-medium">Family Support</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <div class="glass p-10 rounded-xl glass-hover">
+                        <h3 class="text-3xl font-bold mb-8 gradient-text font-poppins">Education</h3>
+                        <div class="mb-8">
+                            <h4 class="text-2xl font-semibold mb-4">Bachelor's Degree in Electrical and Computer Engineering</h4>
+                            <p class="text-xl mb-3 text-neon-purple">Assosa University</p>
+                            <p class="text-lg mb-4">Graduation Date: June 21, 2025</p>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <h4 class="text-2xl font-semibold mb-6 gradient-text">Mission Statement</h4>
+                            <p class="italic text-lg leading-relaxed">
+                                "Engineering is not just about machines — it's about making life smarter. I build systems that connect technology and people through innovation, creativity, and purpose."
+                            </p>
+                            <p class="mt-4 text-right font-bold text-xl">— Andualem Genetu 👨‍💻</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 font-poppins" data-aos="fade-up">
+                <span class="gradient-text">Skills & Expertise</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Engineering & IoT Skills -->
+                <div class="glass p-8 rounded-xl glass-hover" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold mb-6 text-electric-pink font-poppins">
+                        <i class="fas fa-microchip mr-3"></i> Engineering & IoT
+                    </h3>
+                    <div class="space-y-5">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Circuit Design & Simulation</span>
+                                <span class="font-bold text-aqua-cyan">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Power Systems & Machines</span>
+                                <span class="font-bold text-aqua-cyan">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Embedded Systems</span>
+                                <span class="font-bold text-aqua-cyan">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">IoT Smart Automation</span>
+                                <span class="font-bold text-aqua-cyan">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Electronics Maintenance</span>
+                                <span class="font-bold text-aqua-cyan">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Software & Networking Skills -->
+                <div class="glass p-8 rounded-xl glass-hover" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold mb-6 text-neon-purple font-poppins">
+                        <i class="fas fa-code mr-3"></i> Software & Networking
+                    </h3>
+                    <div class="space-y-5">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Python</span>
+                                <span class="font-bold text-aqua-cyan">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Java</span>
+                                <span class="font-bold text-aqua-cyan">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">JavaScript</span>
+                                <span class="font-bold text-aqua-cyan">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">PHP</span>
+                                <span class="font-bold text-aqua-cyan">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Network Configuration</span>
+                                <span class="font-bold text-aqua-cyan">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video Editing & Graphics Skills -->
+                <div class="glass p-8 rounded-xl glass-hover" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-2xl font-bold mb-6 text-aqua-cyan font-poppins">
+                        <i class="fas fa-video mr-3"></i> Video Editing & Graphics
+                    </h3>
+                    <div class="space-y-5">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Premiere Pro</span>
+                                <span class="font-bold text-electric-pink">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">After Effects</span>
+                                <span class="font-bold text-electric-pink">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">DaVinci Resolve</span>
+                                <span class="font-bold text-electric-pink">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Photoshop</span>
+                                <span class="font-bold text-electric-pink">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Illustrator</span>
+                                <span class="font-bold text-electric-pink">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Digital Marketing Skills -->
+                <div class="glass p-8 rounded-xl glass-hover" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-2xl font-bold mb-6 text-primary-blue font-poppins">
+                        <i class="fas fa-bullhorn mr-3"></i> Digital Marketing
+                    </h3>
+                    <div class="space-y-5">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">SEO & Content Strategy</span>
+                                <span class="font-bold text-aqua-cyan">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Social Media Ads</span>
+                                <span class="font-bold text-aqua-cyan">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Brand Identity Design</span>
+                                <span class="font-bold text-aqua-cyan">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Marketing Analytics</span>
+                                <span class="font-bold text-aqua-cyan">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Email Campaigns</span>
+                                <span class="font-bold text-aqua-cyan">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Professional Skills -->
+                <div class="glass p-8 rounded-xl glass-hover md:col-span-2 lg:col-span-2" data-aos="fade-up" data-aos-delay="500">
+                    <h3 class="text-2xl font-bold mb-6 text-solar-yellow font-poppins">
+                        <i class="fas fa-user-tie mr-3"></i> Professional Skills
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Leadership & Team Collaboration</span>
+                                <span class="font-bold text-aqua-cyan">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Technical Report Writing</span>
+                                <span class="font-bold text-aqua-cyan">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Presentation & Communication</span>
+                                <span class="font-bold text-aqua-cyan">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Creative Problem Solving</span>
+                                <span class="font-bold text-aqua-cyan">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-16 font-poppins" data-aos="fade-up">
+                <span class="gradient-text">My Projects</span>
+            </h1>
+            <div class="project-card glass p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-56 mb-6 overflow-hidden rounded-xl">
+                        <h1 class="text-2xl font-bold text-center"> HEALTH MONITERING STSSTEM
+                        
+                        </h1>
+                       <video controls class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <source src="v1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                     <div class="h-56 mb-6 overflow-hidden rounded-xl">
+                        <h1 class="text-2xl font-bold text-center"> IOT-BASED TEMPRATURE MONITORING SYSTEM
+                        
+                        </h1>
+                       <video controls class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <source src="v5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                    </div>
+                     <div class="h-56 mb-6 overflow-hidden rounded-xl">
+                        <h1 class="text-2xl font-bold text-center"> BASIC EMBEDDED SYSTEMS PROJECT(LED AND BUTTON)
+                        </h1>
+                       <video controls class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <source src="compressed_v4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+            
+            </div>
+             <div class="h-56 mb-6 overflow-hidden rounded-xl">
+                <h1 class="text-2xl font-bold text-center"> SMART AGRICULTURE SYSTEM
+                        
+                        </h1>
+                       <video controls class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <source src="compressed_v3 - Copy.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                    </div>
+                     
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 font-poppins" data-aos="fade-up">
+                <span class="gradient-text">Featured Projects</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Project 1: Arduino Office Appliance Control -->
+                <div class="project-card glass p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-56 mb-6 overflow-hidden rounded-xl">
+                        <img src="1.jpg" alt="Arduino Office Appliance Control System" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-electric-pink font-poppins">Arduino-Based Office Appliance Control System</h3>
+                    <p class="mb-6 text-lg">Smart automation of office devices using Arduino; energy efficient and IoT enabled.</p>
+                    
+                    <!-- Code Snippet -->
+                    <div class="code-snippet"> 
+                        <div class="code-header">
+                            <span class="code-language">Arduino</span>
+                            <div class="code-actions">
+                                <button class="code-action-btn" onclick="copyCode(this)">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                                <button class="code-action-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <pre><code class="language-arduino">#include &lt;WiFi.h&gt;
+#include &lt;ESP8266WiFi.h&gt;
+
+const char* ssid = "Office_Network";
+const char* password = "secure_password";
+
+WiFiServer server(80);
+
+void setup() {
+  Serial.begin(115200);
+  WiFi.begin(ssid, password);
+  
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print("Connecting to WiFi...");
+  }
+  
+  server.begin();
+  Serial.println("Server started");
+}
+
+void loop() {
+  WiFiClient client = server.available();
+  if (client) {
+    String request = client.readStringUntil('\r');
+    controlAppliances(request);
+    client.flush();
+  }
+}</code></pre>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="px-4 py-2 bg-gradient-to-r from-primary-blue to-neon-purple text-white rounded-full font-medium">Arduino</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-neon-purple to-electric-pink text-white rounded-full font-medium">C++</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-electric-pink to-aqua-cyan text-white rounded-full font-medium">IoT</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <a href="#" class="text-primary-blue hover:text-aqua-cyan font-semibold transition-colors">View Code</a>
+                        <a href="#" class="text-electric-pink hover:text-neon-purple font-semibold transition-colors">Watch Demo</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Smart Lighting System -->
+                <div class="project-card glass p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-56 mb-6 overflow-hidden rounded-xl">
+                        <img src="27.jpg" alt="IoT Smart Lighting System" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-neon-purple font-poppins">IoT Smart Lighting System</h3>
+                    <p class="mb-6 text-lg">Controls lighting via mobile app and sensors for energy efficiency and convenience.</p>
+                    
+                    <!-- Code Snippet -->
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <span class="code-language">Python</span>
+                            <div class="code-actions">
+                                <button class="code-action-btn" onclick="copyCode(this)">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                                <button class="code-action-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <pre><code class="language-python">import asyncio
+import json
+from flask import Flask, jsonify
+from flask_socketio import SocketIO, emit
+import RPi.GPIO as GPIO
+
+app = Flask(__name__)
+socketio = SocketIO(app)
+
+# GPIO setup for LED control
+GPIO.setmode(GPIO.BCM)
+LED_PINS = [18, 19, 20, 21]
+for pin in LED_PINS:
+    GPIO.setup(pin, GPIO.OUT)
+
+@socketio.on('light_control')
+def handle_light_control(data):
+    led_id = data['led_id']
+    state = data['state']
+    GPIO.output(LED_PINS[led_id], GPIO.HIGH if state else GPIO.LOW)
+    emit('status', {'led_id': led_id, 'state': state})
+
+if __name__ == '__main__':
+    socketio.run(app, host='0.0.0.0', port=5000)</code></pre>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="px-4 py-2 bg-gradient-to-r from-neon-purple to-electric-pink text-white rounded-full font-medium">IoT</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-electric-pink to-aqua-cyan text-white rounded-full font-medium">Python</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-aqua-cyan to-primary-blue text-white rounded-full font-medium">Mobile App</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <a href="#" class="text-primary-blue hover:text-aqua-cyan font-semibold transition-colors">View Code</a>
+                        <a href="#" class="text-electric-pink hover:text-neon-purple font-semibold transition-colors">Watch Demo</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Network Monitoring Tool -->
+                <div class="project-card glass p-8 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-56 mb-6 overflow-hidden rounded-xl">
+                        <img src="23.jpg" alt="Python Network Monitoring Tool" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-aqua-cyan font-poppins">Python Network Monitoring Tool</h3>
+                    <p class="mb-6 text-lg">Visualizes bandwidth in real time for network performance analysis.</p>
+                    
+                    <!-- Code Snippet -->
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <span class="code-language">Python</span>
+                            <div class="code-actions">
+                                <button class="code-action-btn" onclick="copyCode(this)">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                                <button class="code-action-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <pre><code class="language-python">import psutil
+import time
+import matplotlib.pyplot as plt
+from datetime import datetime
+import json
+
+class NetworkMonitor:
+    def __init__(self):
+        self.data_history = []
+        
+    def get_network_stats(self):
+        # Get network I/O statistics
+        net_io = psutil.net_io_counters()
+        bytes_sent = net_io.bytes_sent
+        bytes_recv = net_io.bytes_recv
+        
+        # Calculate bandwidth (bytes per second)
+        upload_speed = bytes_sent / (1024 * 1024)  # MB/s
+        download_speed = bytes_recv / (1024 * 1024)  # MB/s
+        
+        return {
+            'timestamp': datetime.now().isoformat(),
+            'upload_speed': upload_speed,
+            'download_speed': download_speed,
+            'bytes_sent': bytes_sent,
+            'bytes_recv': bytes_recv
+        }
+    
+    def visualize_data(self):
+        timestamps = [d['timestamp'] for d in self.data_history]
+        upload_speeds = [d['upload_speed'] for d in self.data_history]
+        download_speeds = [d['download_speed'] for d in self.data_history]
+        
+        plt.figure(figsize=(12, 6))
+        plt.plot(timestamps, upload_speeds, label='Upload Speed')
+        plt.plot(timestamps, download_speeds, label='Download Speed')
+        plt.xlabel('Time')
+        plt.ylabel('Speed (MB/s)')
+        plt.title('Network Performance Monitor')
+        plt.legend()
+        plt.xticks(rotation=45)
+        plt.tight_layout()
+        plt.show()
+
+monitor = NetworkMonitor()
+while True:
+    stats = monitor.get_network_stats()
+    monitor.data_history.append(stats)
+    if len(monitor.data_history) > 100:
+        monitor.visualize_data()
+        break
+    time.sleep(1)</code></pre>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="px-4 py-2 bg-gradient-to-r from-aqua-cyan to-primary-blue text-white rounded-full font-medium">Python</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-primary-blue to-neon-purple text-white rounded-full font-medium">Data Visualization</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-neon-purple to-electric-pink text-white rounded-full font-medium">Networking</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <a href="#" class="text-primary-blue hover:text-aqua-cyan font-semibold transition-colors">View Code</a>
+                        <a href="#" class="text-electric-pink hover:text-neon-purple font-semibold transition-colors">Watch Demo</a>
+                    </div>
+                </div>
+                
+                <!-- Project 4: Marketing Dashboard -->
+                <div class="project-card glass p-8 rounded-xl" data-aos="fade-up" data-aos-delay="400">
+                    <div class="h-56 mb-6 overflow-hidden rounded-xl">
+                        <img src="3.jpg" alt="Digital Marketing Dashboard" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-electric-pink font-poppins">Digital Marketing Dashboard</h3>
+                    <p class="mb-6 text-lg">React + Firebase project for tracking marketing campaigns and analytics.</p>
+                    
+                    <!-- Code Snippet -->
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <span class="code-language">JavaScript</span>
+                            <div class="code-actions">
+                                <button class="code-action-btn" onclick="copyCode(this)">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                                <button class="code-action-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <pre><code class="language-javascript">import React, { useState, useEffect } from 'react';
+import { collection, query, where, orderBy, onSnapshot } from 'firebase/firestore';
+import { Line, Bar, Pie } from 'recharts';
+
+const MarketingDashboard = () => {
+  const [campaigns, setCampaigns] = useState([]);
+  const [analytics, setAnalytics] = useState({
+    totalClicks: 0,
+    conversions: 0,
+    revenue: 0
+  });
+
+  useEffect(() => {
+    // Fetch campaigns from Firebase
+    const q = query(
+      collection('campaigns'),
+      orderBy('createdAt', 'desc'),
+      limit(10)
+    );
+    
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const campaignData = snapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+      }));
+      setCampaigns(campaignData);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  const calculateROI = (cost, revenue) => {
+    return ((revenue - cost) / cost * 100).toFixed(2);
+  };
+
+  return (
+    &lt;div className="dashboard"&gt;
+      &lt;h1&gt;Marketing Analytics&lt;/h1&gt;
+      &lt;div className="metrics-grid"&gt;
+        &lt;MetricCard 
+          title="Total Campaigns" 
+          value={campaigns.length} 
+        /&gt;
+        &lt;MetricCard 
+          title="Total Revenue" 
+          value={`$${analytics.revenue.toLocaleString()}`} 
+        /&gt;
+        &lt;MetricCard 
+          title="Conversion Rate" 
+          value={`${calculateROI(analytics.cost, analytics.revenue)}%`} 
+        /&gt;
+      &lt;/div&gt;
+      &lt;CampaignChart data={campaigns} /&gt;
+    &lt;/div&gt;
+  );
+};
+
+export default MarketingDashboard;</code></pre>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="px-4 py-2 bg-gradient-to-r from-electric-pink to-aqua-cyan text-white rounded-full font-medium">React</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-aqua-cyan to-primary-blue text-white rounded-full font-medium">Firebase</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-primary-blue to-neon-purple text-white rounded-full font-medium">Analytics</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <a href="#" class="text-primary-blue hover:text-aqua-cyan font-semibold transition-colors">View Code</a>
+                        <a href="#" class="text-electric-pink hover:text-neon-purple font-semibold transition-colors">Live Demo</a>
+                    </div>
+                </div>
+                
+                <!-- Project 5: Video Editing Portfolio -->
+                <div class="project-card glass p-8 rounded-xl" data-aos="fade-up" data-aos-delay="500">
+                    <div class="h-56 mb-6 overflow-hidden rounded-xl">
+                        <img src="1245.jpg" alt="Video Editing Portfolio" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-neon-purple font-poppins">Video Editing Portfolio</h3>
+                    <p class="mb-6 text-lg">Showcase of cinematic shorts, ads, and creative video content.</p>
+                    
+                    <!-- Code Snippet -->
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <span class="code-language">Premiere Pro</span>
+                            <div class="code-actions">
+                                <button class="code-action-btn" onclick="copyCode(this)">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                                <button class="code-action-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <pre><code class="language-bash"># Premiere Pro Automation Script
+# Video Processing Pipeline
+
+import os
+import subprocess
+from pathlib import Path
+
+class VideoProcessor:
+    def __init__(self, input_folder, output_folder):
+        self.input_folder = Path(input_folder)
+        self.output_folder = Path(output_folder)
+        self.output_folder.mkdir(exist_ok=True)
+        
+    def process_videos(self):
+        for video_file in self.input_folder.glob("*.mp4"):
+            print(f"Processing: {video_file.name}")
+            
+            # Apply color grading
+            color_preset = "cinematic_look"
+            self.apply_color_grading(video_file, color_preset)
+            
+            # Add motion graphics
+            self.add_motion_graphics(video_file)
+            
+            # Export in multiple formats
+            self.export_formats(video_file)
+    
+    def apply_color_grading(self, video_file, preset):
+        cmd = [
+            "ffmpeg",
+            "-i", str(video_file),
+            "-vf", f"colorgrade=preset={preset}",
+            "-c:v", "libx264",
+            "-crf", "18",
+            f"{self.output_folder}/{video_file.stem}_graded.mp4"
+        ]
+        subprocess.run(cmd)
+    
+    def add_motion_graphics(self, video_file):
+        # Add lower thirds, transitions, and effects
+        graphics_template = "corporate_branding"
+        cmd = [
+            "ffmpeg",
+            "-i", str(video_file),
+            "-vf", f"movie=overlay.png:format=rgba,loop=1,setpts=PTS-START+{len(video_file)*30/TB-1[v];[0][v]overlay[v]",
+            "-c:v", "libx264",
+            f"{self.output_folder}/{video_file.stem}_with_graphics.mp4"
+        ]
+        subprocess.run(cmd)
+    
+    def export_formats(self, video_file):
+        formats = [
+            ("mp4", "h264"),
+            ("webm", "libvpx-vp9"),
+            ("mov", "prores_ks")
+        ]
+        
+        for format, codec in formats:
+            output_file = self.output_folder / f"{video_file.stem}.{format}"
+            cmd = [
+                "ffmpeg",
+                "-i", str(video_file),
+                "-c:v", codec,
+                "-crf", "18",
+                str(output_file)
+            ]
+            subprocess.run(cmd)
+
+# Usage
+processor = VideoProcessor("raw_footage/", "final_videos/")
+processor.process_videos()</code></pre>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="px-4 py-2 bg-gradient-to-r from-neon-purple to-electric-pink text-white rounded-full font-medium">Premiere Pro</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-electric-pink to-aqua-cyan text-white rounded-full font-medium">After Effects</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-aqua-cyan to-primary-blue text-white rounded-full font-medium">Motion Graphics</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <a href="#" class="text-primary-blue hover:text-aqua-cyan font-semibold transition-colors">View Details</a>
+                        <a href="#" class="text-electric-pink hover:text-neon-purple font-semibold transition-colors">Watch Videos</a>
+                    </div>
+                </div>
+                
+                <!-- Project 6: Brand Identity Design -->
+                <div class="project-card glass p-8 rounded-xl" data-aos="fade-up" data-aos-delay="600">
+                    <div class="h-56 mb-6 overflow-hidden rounded-xl">
+                        <img src="745.jpg" alt="Brand Identity Design" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-aqua-cyan font-poppins">Brand Identity Design</h3>
+                    <p class="mb-6 text-lg">Complete brand identity packages including logos, color schemes, and marketing materials.</p>
+                    
+                    <!-- Code Snippet -->
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <span class="code-language">CSS</span>
+                            <div class="code-actions">
+                                <button class="code-action-btn" onclick="copyCode(this)">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                                <button class="code-action-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <pre><code class="language-css">/* Brand Identity Design System */
+:root {
+  /* Primary Brand Colors */
+  --primary-color: #0066FF;
+  --secondary-color: #8B5CF6;
+  --accent-color: #FF006E;
+  
+  /* Typography */
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+  
+  /* Spacing System */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+}
+
+/* Logo Components */
+.brand-logo {
+  width: 200px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 102, 255, 0.3);
+}
+
+/* Color Palette Display */
+.color-palette {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin: var(--spacing-lg) 0;
+}
+
+.color-swatch {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-md);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.color-swatch::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.color-swatch:hover::before {
+  transform: translateX(100%);
+}
+
+/* Typography Scale */
+.typography-scale {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+.type-specimen {
+  padding: var(--spacing-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.type-specimen:hover {
+  background: rgba(0, 102, 255, 0.05);
+  transform: translateY(-2px);
+}</code></pre>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="px-4 py-2 bg-gradient-to-r from-aqua-cyan to-primary-blue text-white rounded-full font-medium">Branding</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-primary-blue to-neon-purple text-white rounded-full font-medium">Logo Design</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-neon-purple to-electric-pink text-white rounded-full font-medium">Marketing</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <a href="#" class="text-primary-blue hover:text-aqua-cyan font-semibold transition-colors">View Portfolio</a>
+                        <a href="#" class="text-electric-pink hover:text-neon-purple font-semibold transition-colors">Case Studies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Gallery Section -->
+    <section id="gallery" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 font-poppins" data-aos="fade-up">
+                <span class="gradient-text">Media & Visual Showcase</span>
+            </h2>
+            
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-16" data-aos="fade-up">
+                <button class="filter-btn active px-8 py-3 rounded-full border-2 border-electric-pink text-white font-semibold relative z-10" data-filter="all">All</button>
+                <button class="filter-btn px-8 py-3 rounded-full border-2 border-neon-purple text-white font-semibold relative z-10" data-filter="video">Video</button>
+                <button class="filter-btn px-8 py-3 rounded-full border-2 border-aqua-cyan text-white font-semibold relative z-10" data-filter="design">Design</button>
+                <button class="filter-btn px-8 py-3 rounded-full border-2 border-primary-blue text-white font-semibold relative z-10" data-filter="marketing">Marketing</button>
+                <button class="filter-btn px-8 py-3 rounded-full border-2 border-electric-pink text-white font-semibold relative z-10" data-filter="iot">IoT</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item relative overflow-hidden rounded-xl" data-category="video" data-aos="fade-up">
+                    <img src="1.jpg" alt="Tech Innovation Showreel" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <div class="text-white">
+                            <h3 class="font-bold text-lg">Tech Innovation Showreel</h3>
+                            <p class="text-sm">Video</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item relative overflow-hidden rounded-xl" data-category="design" data-aos="fade-up" data-aos-delay="100">
+                    <img src="31.jpg" alt="Poster for Digital Campaign" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <div class="text-white">
+                            <h3 class="font-bold text-lg">Digital Campaign Poster</h3>
+                            <p class="text-sm">Design</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item relative overflow-hidden rounded-xl" data-category="marketing" data-aos="fade-up" data-aos-delay="200">
+                    <img src="335.jpg" alt="Social Ad Layout" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <div class="text-white">
+                            <h3 class="font-bold text-lg">Social Media Ad</h3>
+                            <p class="text-sm">Marketing</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item relative overflow-hidden rounded-xl" data-category="iot" data-aos="fade-up" data-aos-delay="300">
+                    <img src="A.jpg" alt="Smart Home Setup" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <div class="text-white">
+                            <h3 class="font-bold text-lg">Smart Home Setup</h3>
+                            <p class="text-sm">IoT</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item relative overflow-hidden rounded-xl" data-category="video" data-aos="fade-up" data-aos-delay="400">
+                    <img src="B.jpg" alt="Product Demo Video" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <div class="text-white">
+                            <h3 class="font-bold text-lg">Product Demo</h3>
+                            <p class="text-sm">Video</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item relative overflow-hidden rounded-xl" data-category="design" data-aos="fade-up" data-aos-delay="500">
+                    <img src="C.jpg" alt="Brand Identity" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <div class="text-white">
+                            <h3 class="font-bold text-lg">Brand Identity</h3>
+                            <p class="text-sm">Design</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item relative overflow-hidden rounded-xl" data-category="marketing" data-aos="fade-up" data-aos-delay="600">
+                    <img src="E.jpg" alt="Email Campaign" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <div class="text-white">
+                            <h3 class="font-bold text-lg">Email Campaign</h3>
+                            <p class="text-sm">Marketing</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item relative overflow-hidden rounded-xl" data-category="iot" data-aos="fade-up" data-aos-delay="700">
+                    <img src="D.jpg" alt="Arduino Project" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <div class="text-white">
+                            <h3 class="font-bold text-lg">Arduino Project</h3>
+                            <p class="text-sm">IoT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 font-poppins" data-aos="fade-up">
+                <span class="gradient-text">Experience Timeline</span>
+            </h2>
+            
+            <div class="timeline relative">
+                <!-- Experience Item 1 -->
+                <div class="timeline-item relative mb-16" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass p-8 rounded-xl md:w-5/12 glass-hover">
+                        <h3 class="text-2xl font-bold mb-3 text-electric-pink font-poppins">Network Engineer</h3>
+                        <h4 class="text-xl mb-3 text-neon-purple">Ethio Telecom</h4>
+                        <p class="mb-6 text-lg">2024-2025</p>
+                        <ul class="list-disc list-inside space-y-2 text-lg">
+                            <li>Network configuration, monitoring, and security</li>
+                            <li>Service provisioning, fault management, and system maintenance</li>
+                            <li>Strengthened operational efficiency and service reliability</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experience Item 2 -->
+                <div class="timeline-item relative mb-16" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass p-8 rounded-xl md:w-5/12 md:ml-auto glass-hover">
+                        <h3 class="text-2xl font-bold mb-3 text-neon-purple font-poppins">Software Intern</h3>
+                        <h4 class="text-xl mb-3 text-aqua-cyan">Assosa University</h4>
+                        <p class="mb-6 text-lg">2023-2024</p>
+                        <ul class="list-disc list-inside space-y-2 text-lg">
+                            <li>Contributed to software development and system automation tasks</li>
+                            <li>Gained experience in IoT systems and practical Arduino applications</li>
+                            <li>Assisted in research and innovation initiatives related to automation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experience Item 3 -->
+                <div class="timeline-item relative mb-16" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass p-8 rounded-xl md:w-5/12 glass-hover">
+                        <h3 class="text-2xl font-bold mb-3 text-primary-blue font-poppins">Freelance Digital Creator</h3>
+                        <h4 class="text-xl mb-3 text-electric-pink">Self-Employed</h4>
+                        <p class="mb-6 text-lg">2022-Present</p>
+                        <ul class="list-disc list-inside space-y-2 text-lg">
+                            <li>Delivered video edits, marketing campaigns, and branding materials</li>
+                            <li>Developed custom IoT solutions for small businesses</li>
+                            <li>Created digital content for social media and advertising</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 font-poppins" data-aos="fade-up">
+                <span class="gradient-text">Certificates & Recognition</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Certificate 1 -->
+                <div class="glass p-8 rounded-xl text-center glass-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-5xl mb-6 text-electric-pink">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-poppins">Arduino Project Recognition</h3>
+                    <p class="text-lg">Assosa University Technology and Innovation Linkage Directorate</p>
+                </div>
+                
+                <!-- Certificate 2 -->
+                <div class="glass p-8 rounded-xl text-center glass-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl mb-6 text-neon-purple">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-poppins">National Voluntary Service</h3>
+                    <p class="text-lg">Ministry of Peace and Ministry of Education, Ethiopia</p>
+                </div>
+                
+                <!-- Certificate 3 -->
+                <div class="glass p-8 rounded-xl text-center glass-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-5xl mb-6 text-aqua-cyan">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-poppins">Advanced Networking Workshop</h3>
+                    <p class="text-lg">Ethio Telecom Training Center</p>
+                </div>
+                
+                <!-- Certificate 4 -->
+                <div class="glass p-8 rounded-xl text-center glass-hover" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-5xl mb-6 text-primary-blue">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-poppins">Google Digital Marketing Certificate</h3>
+                    <p class="text-lg">Google Digital Garage</p>
+                </div>
+                
+                <!-- Certificate 5 -->
+                <div class="glass p-8 rounded-xl text-center glass-hover" data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-5xl mb-6 text-electric-pink">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-poppins">Adobe Premiere Pro Badge</h3>
+                    <p class="text-lg">Adobe Certified Professional</p>
+                </div>
+                
+                <!-- Certificate 6 -->
+                <div class="glass p-8 rounded-xl text-center glass-hover" data-aos="fade-up" data-aos-delay="600">
+                    <div class="text-5xl mb-6 text-neon-purple">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-poppins">IoT Specialist Certification</h3>
+                    <p class="text-lg">Cisco Networking Academy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 font-poppins" data-aos="fade-up">
+                <span class="gradient-text">Blog & Insights</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Blog Post 1 -->
+                <div class="glass p-8 rounded-xl glass-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-56 mb-6 overflow-hidden rounded-xl">
+                        <img src="69.jpg" alt="IoT in Africa" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-electric-pink font-poppins">The Future of IoT in Africa</h3>
+                    <p class="mb-6 text-lg">Exploring how IoT technologies are transforming industries across African continent and creating new opportunities for innovation.</p>
+                    <a href="#" class="text-primary-blue hover:text-aqua-cyan font-semibold transition-colors">Read More</a>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="glass p-8 rounded-xl glass-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-56 mb-6 overflow-hidden rounded-xl">
+                        <img src="85.jpg" alt="Video Marketing" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-neon-purple font-poppins">How Video Marketing Drives Innovation</h3>
+                    <p class="mb-6 text-lg">The power of visual storytelling in tech marketing and how to create compelling video content for innovative products.</p>
+                    <a href="#" class="text-primary-blue hover:text-aqua-cyan font-semibold transition-colors">Read More</a>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="glass p-8 rounded-xl glass-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-56 mb-6 overflow-hidden rounded-xl">
+                        <img src="6.jpg" alt="Circuits and Creativity" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-aqua-cyan font-poppins">From Circuits to Content</h3>
+                    <p class="mb-6 text-lg">Merging engineering precision with creative expression to build a unique career path in digital age.</p>
+                    <a href="#" class="text-primary-blue hover:text-aqua-cyan font-semibold transition-colors">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 font-poppins" data-aos="fade-up">
+                <span class="gradient-text">Testimonials</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass p-8 rounded-xl glass-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-6">
+                        <img src="https://picsum.photos/seed/professional-man-tech-education-university-professor/120/120.jpg" alt="Mr. Yabbal Kefialew" class="w-20 h-20 rounded-full mr-4 border-3 border-electric-pink">
+                        <div>
+                            <h3 class="font-bold text-xl">Mr. Yabbal Kefialew</h3>
+                            <p class="text-lg text-aqua-cyan">Dean of Engineering, Assosa University</p>
+                        </div>
+                    </div>
+                    <p class="italic text-lg mb-6">"Andualem's technical skill and creative thinking made our automation prototype a success. His ability to bridge engineering and design is remarkable."</p>
+                    <div class="flex">
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="glass p-8 rounded-xl glass-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-6">
+                        <img src="https://picsum.photos/seed/professional-woman-marketing-tech-director/120/120.jpg" alt="Client" class="w-20 h-20 rounded-full mr-4 border-3 border-neon-purple">
+                        <div>
+                            <h3 class="font-bold text-xl">Sarah Johnson</h3>
+                            <p class="text-lg text-aqua-cyan">Marketing Director, TechStart</p>
+                        </div>
+                    </div>
+                    <p class="italic text-lg mb-6">"Andualem delivered exceptional video content and marketing materials that significantly boosted our campaign engagement. Highly recommended!"</p>
+                    <div class="flex">
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="glass p-8 rounded-xl glass-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-6">
+                        <img src="https://picsum.photos/seed/professional-man-education-mentor-technology/120/120.jpg" alt="Mr. Shegaw Degefaw" class="w-20 h-20 rounded-full mr-4 border-3 border-aqua-cyan">
+                        <div>
+                            <h3 class="font-bold text-xl">Mr. Shegaw Degefaw</h3>
+                            <p class="text-lg text-aqua-cyan">Lecturer, Assosa University</p>
+                        </div>
+                    </div>
+                    <p class="italic text-lg mb-6">"As Andualem's mentor, I've witnessed his growth from a student to a skilled professional. His dedication to learning and innovation is inspiring."</p>
+                    <div class="flex">
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 font-poppins" data-aos="fade-up">
+                <span class="gradient-text">Let's Work Together</span>
+            </h2>
+            
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div data-aos="fade-right">
+                    <h3 class="text-3xl font-bold mb-8 font-poppins">Get in Touch</h3>
+                    
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-center glass p-6 rounded-xl glass-hover">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-r from-primary-blue to-neon-purple flex items-center justify-center text-white mr-6 text-2xl">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2">Phone</h4>
+                                <p class="text-lg">+251 922 901 083</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center glass p-6 rounded-xl glass-hover">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-r from-neon-purple to-electric-pink flex items-center justify-center text-white mr-6 text-2xl">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2">Email</h4>
+                                <p class="text-lg">angenetu47@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center glass p-6 rounded-xl glass-hover">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-r from-electric-pink to-aqua-cyan flex items-center justify-center text-white mr-6 text-2xl">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2">Location</h4>
+                                <p class="text-lg">Addis Ababa, Ethiopia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-6">
+                        <a href="#" class="w-14 h-14 rounded-full bg-gradient-to-r from-primary-blue to-neon-purple flex items-center justify-center text-white hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="w-14 h-14 rounded-full bg-gradient-to-r from-neon-purple to-electric-pink flex items-center justify-center text-white hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="w-14 h-14 rounded-full bg-gradient-to-r from-electric-pink to-aqua-cyan flex items-center justify-center text-white hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                        <a href="#" class="w-14 h-14 rounded-full bg-gradient-to-r from-aqua-cyan to-primary-blue flex items-center justify-center text-white hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <form id="contact-form" class="glass p-10 rounded-xl glass-hover">
+                        <div class="mb-6">
+                            <label for="name" class="block mb-3 font-bold text-lg">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-6 py-4 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:ring-4 focus:ring-electric-pink text-lg" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block mb-3 font-bold text-lg">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-6 py-4 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:ring-4 focus:ring-neon-purple text-lg" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="subject" class="block mb-3 font-bold text-lg">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-6 py-4 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:ring-4 focus:ring-aqua-cyan text-lg" required>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <label for="message" class="block mb-3 font-bold text-lg">Message</label>
+                            <textarea id="message" name="message" rows="6" class="w-full px-6 py-4 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:ring-4 focus:ring-primary-blue text-lg" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-primary-blue via-neon-purple to-electric-pink text-white rounded-xl font-bold text-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                            <i class="fas fa-paper-plane mr-3"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg py-12">
+        <div class="container mx-auto px-6 text-center text-white">
+            <p class="text-xl mb-3">© 2025 Andualem Genetu — Electrical & Computer Engineer & Digital Creator</p>
+            <p class="text-lg">Designed with 💙 innovation and creativity</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Prism.js for Code Highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-arduino.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1200,
+            once: true,
+            offset: 100
+        });
+
+        // Preloader
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.querySelector('.preloader').classList.add('hidden');
+            }, 1500);
+        });
+
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('cursor-grow');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('cursor-grow');
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Typing Animation
+        const typingTexts = [
+            "Software Developer",
+            "Video Editor",
+            "Digital Marketer",
+            "Automation Engineer",
+            "Creative Designer"
+        ];
+        
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingSpeed = 120;
+        const deletingSpeed = 60;
+        const pauseTime = 2500;
+        
+        function typeText() {
+            const currentText = typingTexts[textIndex];
+            const typingElement = document.getElementById('typing-text');
+            
+            if (!isDeleting) {
+                typingElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+                
+                if (charIndex === currentText.length) {
+                    isDeleting = true;
+                    setTimeout(typeText, pauseTime);
+                    return;
+                }
+            } else {
+                typingElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+                
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % typingTexts.length;
+                }
+            }
+            
+            setTimeout(typeText, isDeleting ? deletingSpeed : typingSpeed);
+        }
+        
+        // Start typing animation
+        typeText();
+
+        // Skill Bars Animation
+        const observerOptions = {
+            threshold: 0.3,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-progress');
+                    skillBars.forEach(bar => {
+                        const width = bar.getAttribute('data-width');
+                        bar.style.width = width;
+                    });
+                    skillObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const skillsSection = document.querySelector('#skills');
+        if (skillsSection) {
+            skillObserver.observe(skillsSection);
+        }
+
+        // Gallery Filter
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Filter gallery items
+                const filter = button.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        // Re-trigger AOS animation
+                        item.classList.remove('aos-animate');
+                        setTimeout(() => {
+                            item.classList.add('aos-animate');
+                        }, 100);
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTopButton.classList.add('active');
+            } else {
+                backToTopButton.classList.remove('active');
+            }
+        });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contact-form');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would normally send data to a server
+            // For this demo, we'll just show a success message
+            const formContainer = document.querySelector('#contact-form').parentElement;
+            const originalContent = formContainer.innerHTML;
+            
+            formContainer.innerHTML = `
+                <div class="glass p-12 rounded-xl text-center glass-hover">
+                    <div class="text-6xl mb-6 text-green-400">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 font-poppins">Message Sent Successfully!</h3>
+                    <p class="text-xl mb-8">Thank you for reaching out, ${name}. I'll get back to you soon.</p>
+                    <button id="reset-form" class="px-8 py-4 bg-gradient-to-r from-primary-blue via-neon-purple to-electric-pink text-white rounded-xl font-bold text-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <i class="fas fa-redo mr-3"></i> Send Another Message
+                    </button>
+                </div>
+            `;
+            
+            // Store original form HTML for reset
+            window.originalFormHTML = originalContent;
+            
+            // Add event listener to reset button
+            document.getElementById('reset-form').addEventListener('click', () => {
+                formContainer.innerHTML = window.originalFormHTML;
+                
+                // Re-attach form submit event listener
+                document.getElementById('contact-form').addEventListener('submit', arguments.callee);
+            });
+        });
+
+        // Copy Code Function
+        function copyCode(button) {
+            const codeBlock = button.closest('.code-snippet').querySelector('code');
+            const text = codeBlock.textContent;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                // Show success feedback
+                const originalHTML = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check"></i>';
+                button.style.background = 'var(--aqua-cyan)';
+                
+                setTimeout(() => {
+                    button.innerHTML = originalHTML;
+                    button.style.background = '';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+
+        // Enhanced Particle Background
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Set canvas size
+        function setCanvasSize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        
+        setCanvasSize();
+        window.addEventListener('resize', setCanvasSize);
+        
+        // Enhanced Particle class
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 4 + 1;
+                this.speedX = Math.random() * 2 - 1;
+                this.speedY = Math.random() * 2 - 1;
+                this.color = `hsl(${Math.random() * 60 + 200}, 100%, 60%)`;
+                this.pulseSpeed = Math.random() * 0.02 + 0.01;
+                this.pulsePhase = Math.random() * Math.PI * 2;
+            }
+            
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                this.pulsePhase += this.pulseSpeed;
+                
+                // Bounce off edges
+                if (this.x > canvas.width || this.x < 0) {
+                    this.speedX = -this.speedX;
+                }
+                
+                if (this.y > canvas.height || this.y < 0) {
+                    this.speedY = -this.speedY;
+                }
+            }
+             
+            draw() {
+                const pulseFactor = Math.sin(this.pulsePhase) * 0.5 + 1;
+                ctx.fillStyle = this.color;
+                ctx.globalAlpha = 0.8;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size * pulseFactor, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.globalAlpha = 1;
+            }
+        }
+        
+        // Create particles
+        const particles = [];
+        const particleCount = 120;
+        
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+        
+        // Enhanced particle connections
+        function connectParticles() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < 150) {
+                        const opacity = (1 - distance / 150) * 0.5;
+                        const gradient = ctx.createLinearGradient(
+                            particles[i].x, particles[i].y,
+                            particles[j].x, particles[j].y
+                        );
+                        gradient.addColorStop(0, `hsla(${200 + i * 2}, 100%, 60%, ${opacity})`);
+                        gradient.addColorStop(1, `hsla(${280 + j * 2}, 100%, 60%, ${opacity})`);
+                        
+                        ctx.strokeStyle = gradient;
+                        ctx.lineWidth = 2;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+        
+        // Animation loop
+        function animateParticles() {
+            ctx.fillStyle = 'rgba(10, 14, 39, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            
+            connectParticles();
+            
+            requestAnimationFrame(animateParticles);
+        }
+        
+        animateParticles();
+    </script>
+</body>
+
+</html>
+
+
